@@ -104,7 +104,7 @@ class modJomsocialPhotoshelper
 
 					foreach ($rows as $row) 
 					{
-						if ($row->photo_storage="s3")
+						if ($row->photo_storage=="s3")
 						{
 							$row->photo_thumbnail = "http://".$config['storages3bucket'].".s3.amazonaws.com/".$row->photo_thumbnail;
 						}		
